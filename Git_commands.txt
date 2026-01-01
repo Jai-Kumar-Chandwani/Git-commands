@@ -1,5 +1,13 @@
 ﻿GIT Commands and their uses.
 
+// Git concept // 
+fork : similar as cloning but clone will create a local repo where as fork will create another repo in your account. it is required as if you don't have access to that repo and you to duplicate the repo. changes made in fork repo will not affect the original repo.
+
+.gitignore : add filename in the .gitignore it will not be pushed in git.
+
+//Pro trip //
+pull before you push and take pull very often.
+
 // setups //
 git init --> initialize git repository, creates a hidden folder named as ".git" which keeps track of the files.
 git config --global user.email "user email" --> set the user email
@@ -27,7 +35,14 @@ IMP : you have to be main or master branch
 git merge branchname : it will merge branch into back branch to forward branch
 
 // remote // 
+git clone {{repo_url}} : clone the repository
 git remote add origin {{url}} : it will add a remote named as origin and origin will be the url of repository.
 git push origin {{branch name}} : it will push the specific branch to the origin.
 git push origin --all : it will push all the branches to the origin
 git push origin -u {{branch name}} : always track that branch and will update the branch when we run git push
+git pull origin {{branch name}} : it will pull the new information from remote
+
+//git stash //
+git stash save : it will save somewhere a version .
+git stash pop : it will pop the stash and will make the changes we that we stashed.
+usage --> when you have some local changes and you want to take pull but you don't want to loose local changes so you do stash take pull and the pop the stash.
