@@ -30,3 +30,4 @@ git merge branchname : it will merge branch into back branch to forward branch
 git remote add origin {{url}} : it will add a remote named as origin and origin will be the url of repository.
 git push origin {{branch name}} : it will push the specific branch to the origin.
 git push origin --all : it will push all the branches to the origin
+git push origin -u {{branch name}} : always track that branch and will update the branch when we run git push
