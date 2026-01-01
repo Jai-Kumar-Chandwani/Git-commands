@@ -1,0 +1,32 @@
+﻿GIT Commands and their uses.
+
+// setups //
+git init --> initialize git repository, creates a hidden folder named as ".git" which keeps track of the files.
+git config --global user.email "user email" --> set the user email
+git config --global user.name "username" --> set the username
+
+// basic git // 
+git status --> shows the status of working directory.
+git add --> add new file in staging area 
+git commit -m"" --> commit the staged files with message m.
+git log --> shows the log.
+
+// reverts //
+git revert -n --> if you don't want to create a commit of the revert - revert the change in file.
+git revert --> if you want to create the commit of the revert - revert the change in file.
+git reset --hard --> does not save the commit history and reset the things. reset commits as well as files.
+
+// branching //
+git branch --> list the available branch
+git branch branchname --> create new branch
+git checkout branchname --> switch to new branch
+git checkout -b branchname --> create new branch and checkout to new branch
+
+// merge //
+IMP : you have to be main or master branch
+git merge branchname : it will merge branch into back branch to forward branch
+
+// remote // 
+git remote add origin {{url}} : it will add a remote named as origin and origin will be the url of repository.
+git push origin {{branch name}} : it will push the specific branch to the origin.
+git push origin --all : it will push all the branches to the origin
